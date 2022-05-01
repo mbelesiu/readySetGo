@@ -1,4 +1,4 @@
-package sumArray
+package main
 
 import (
 	"reflect"

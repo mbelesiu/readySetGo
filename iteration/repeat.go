@@ -1,4 +1,4 @@
-package iteration
+package main
 
 // Although I am not a fan of this hard coding of the repeated
 // value since it exsits in two differnt files, this is ok for now
