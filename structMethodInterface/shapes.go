@@ -2,6 +2,17 @@ package shapes
 
 import "math"
 
+// A little note - this is a method structure. it needs the reciverName to tie it
+// to its struct as a method. Thats how it differs from a regular function
+//
+// func (receiverName ReceiverType) MethodName(args)
+//
+//Example:
+//
+// func (r Rectangle) Area() float64 {
+// 	return 0
+// }
+
 // Shape interface
 type Shape interface {
 	Area() float64
