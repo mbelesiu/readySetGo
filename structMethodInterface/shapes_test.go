@@ -13,7 +13,12 @@ func TestPerimeter(t *testing.T) {
 }
 
 func TestArea(t *testing.T) {
-
+	// This is Table driven tests
+	// It makes it eaiser to test multiple tests cases in the same manner
+	// []struct is an anonymous struct. Define the struct (kinda like a slice)
+	// and fill in the fields to correspond
+	// You can iterate just like any otehr array/slice
+	// Pretty neat if you ask me
 	areaTest := []struct {
 		name    string
 		shape   Shape
