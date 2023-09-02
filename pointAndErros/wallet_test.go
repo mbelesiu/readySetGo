@@ -1,11 +1,15 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestWallet(t *testing.T) {
 
 	t.Run("deposit", func(t *testing.T) {
 		wallet := Wallet{}
+		fmt.Println(int(10))
 		wallet.Deposit(Bitcoin(10))
 		assertBalance(t, wallet, Bitcoin(10))
 
