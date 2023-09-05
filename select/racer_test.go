@@ -28,6 +28,6 @@ func TestRacer(t *testing.T) {
 		t.Errorf("got %q, want %q", got, want)
 	}
 
-	slowServer.close()
-	fastServer.close()
+	slowServer.Close()
+	fastServer.Close()
 }
