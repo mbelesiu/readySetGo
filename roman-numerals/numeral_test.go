@@ -5,10 +5,23 @@ import (
 )
 
 func TestRomanNumerals(t *testing.T) {
-	got := ConvertToRoman(1)
-	want := "I"
 
-	if got != want {
-		t.Errorf("got %q, wante %q", got, want)
-	}
+	t.Run("1 gets converted into I", func(t *testing.T) {
+		got := ConvertToRoman(1)
+		want := "I"
+
+		if got != want {
+			t.Errorf("got %q, wante %q", got, want)
+		}
+	})
+
+	t.Run("2 gets converted into II", func(t *testing.T) {
+		got := ConvertToRoman(2)
+		want := "II"
+
+		if got != want {
+			t.Errorf("got %q, wante %q", got, want)
+		}
+	})
+
 }
