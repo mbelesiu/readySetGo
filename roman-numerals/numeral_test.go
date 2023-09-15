@@ -6,22 +6,24 @@ import (
 
 func TestRomanNumerals(t *testing.T) {
 
-	t.Run("1 gets converted into I", func(t *testing.T) {
-		got := ConvertToRoman(1)
-		want := "I"
+	cases := []struct {
+		Description string
+		Arabic      int
+		Want        string
+	}{
+		{"1 gets converted into I", 1, "I"},
+		{"1 gets converted into II", 2, "II"},
+	}
 
-		if got != want {
-			t.Errorf("got %q, wante %q", got, want)
-		}
-	})
+	for _, test := range cases {
+		t.Run(test.Description, func(t *testing.T) {
+			got := ConvertToRoman(test.Arabic)
+			want := test.Want
 
-	t.Run("2 gets converted into II", func(t *testing.T) {
-		got := ConvertToRoman(2)
-		want := "II"
-
-		if got != want {
-			t.Errorf("got %q, wante %q", got, want)
-		}
-	})
+			if got != want {
+				t.Errorf("got %q, wante %q", got, want)
+			}
+		})
+	}
 
 }
