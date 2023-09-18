@@ -59,7 +59,6 @@ var allRomanNumerals = romanNumerals{
 	{100, "C"},
 	{90, "XC"},
 	{50, "L"},
-	{49, "XLIX"},
 	{40, "XL"},
 	{10, "X"},
 	{9, "IX"},
@@ -77,6 +76,7 @@ func (w windowedRoman) Symbols() (symbols [][]byte) {
 
 		if notAtEnd && isSubtractiveSymbol(symbol) && allRomanNumerals.Exists(symbol, w[i+1]) {
 			symbols = append(symbols, []byte{symbol, w[i+1]})
+			i++
 		} else {
 			symbols = append(symbols, []byte{symbol})
 		}
