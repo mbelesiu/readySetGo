@@ -1,10 +1,13 @@
 # readySetGo
-## Me ready to learn Go, Ready?
+
+Me ready to learn Go, Ready?
+
+This is my progress learning Go using the [Learn Go with Tests site](https://quii.gitbook.io/learn-go-with-tests/)
 
 
-#### Chapters completed
+## Chapters Covered
 
-##### Go Fundamentals
+### Go Fundamentals
 
 - [X] Hello, World
 - [X] Integers
@@ -27,7 +30,7 @@
 - [ ] Generics
 - [ ] Revisiting Arrays & Slices with Generics
 
-##### Go Fundamentals
+### Go Fundamentals
 
 - [ ] HTTP Sever
 - [ ] JSON, Routing & Embedding
